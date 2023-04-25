@@ -1,0 +1,48 @@
+.info {
+    position: relative;
+    padding-top: 93px;
+    padding-bottom: 88px;
+    &__image-one {
+        position: absolute;
+        left: 142px;
+    }
+    &__image-two {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    &__image-three {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    &__content {
+        width: 790px;
+        margin-left: auto;
+    }
+    &__content-descr {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 120%;
+        color: #1B1B1B;
+        margin-bottom: 40px;
+    }
+    &__content-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__content-price {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 110%;
+        color: #1B1B1B;
+        &--color {
+            color: #E91E1D;
+        }
+    }
+    &__content-button {
+        width: 270px;
+        height: 60px;
+        margin-left: 30px;
+    }
+}

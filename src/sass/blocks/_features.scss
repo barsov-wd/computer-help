@@ -1,0 +1,42 @@
+.features {
+    padding: 24px 0;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        display: flex;  
+        align-items: center;
+        margin-right: 80px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__item-text {
+        margin-left: 20px;
+    }
+    &__item-title {
+        font-size: 20px;
+        line-height: 21px;
+        color: #1B1B1B;
+        margin-bottom: 2px;
+    }
+    &__item-descr {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 110%;
+        color: #1B1B1B;
+        &--one {
+            width: 195px;
+        }
+        &--two {
+            width: 207px;
+        }
+        &--three {
+            width: 243px;
+        }
+        &--four {
+            width: 232px;
+        }
+    }
+}

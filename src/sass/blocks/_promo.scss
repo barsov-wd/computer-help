@@ -1,0 +1,91 @@
+.promo {
+    background: #EFEFEF url('../img/promo/promo-bg.png') right no-repeat; 
+    background-size: contain;
+    &__container {
+        position: relative;
+        padding-top: 39px;
+        padding-bottom: 12px;
+    }
+    &__image-comp {
+        position: absolute;
+        right: 0;
+        bottom: 26px;
+    }
+    &__image-notebook {
+        position: absolute;
+        right: 28px;
+        bottom: 62px;
+    }
+    &__image-help {
+        position: absolute;
+        right: -79px;
+        bottom: 60px;
+    }
+    &__content {
+        padding-top: 97px;
+        padding-bottom: 106px;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 100%;
+        color: #1B1B1B;
+        margin-bottom: 32px;
+        &--color {
+            padding: 0 15px;
+            width: 308px;
+            height: 83px;
+            display: block;
+            background: #E91E1D;
+            border-radius: 15px;
+            color: #fff;
+            margin-bottom: 0;
+        }
+        &--color-last {
+            width: 582px;
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 120%;
+        color: #1B1B1B;
+        margin-bottom: 37px;
+        &--color {
+            color: #E91E1D;
+        }
+    }
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 850px;
+    }
+    &__input-group {
+        width: 270px;
+    }
+    &__input {
+        font-family: 'Roboto Regular', sans-serif;
+        font-weight: 400;
+        width: 100%;
+        height: 60px;
+        border: none;
+        border: 1px solid #828282;
+        border-radius: 15px;
+        background-color: transparent;
+        padding: 0 20px;
+        font-size: 18px;
+        line-height: 21px;
+        color: #828282;
+        &::placeholder {
+            color:#828282;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__button {
+        width: 270px;
+        height: 60px;
+    }
+}

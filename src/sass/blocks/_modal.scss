@@ -1,0 +1,108 @@
+.modal {
+    position: fixed;
+    z-index: 199;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    background: rgba(45, 45, 45, 0.6);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+
+    &--active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__container {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    &-main__dialog {
+        position: relative;
+        width: 1371px;
+        height: 721px;
+        position: relative;
+        text-align: center;
+        padding-top: 241px;
+        background: #fff;
+        box-shadow: 0px 1px 6px rgba(63, 63, 63, 0.4);
+        border-radius: 15px;
+    }
+
+    &-main__close {
+        position: absolute;
+        top: 43px;
+        right: 61px;
+        cursor: pointer;
+    }
+
+    &-main__title {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 110%;
+        color: #1B1B1B;
+        margin-bottom: 28px;
+    }
+
+    &-main__descr {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 120%;
+        color: #1B1B1B;
+        margin-bottom: 69px;
+    }
+
+    &-main__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 850px;
+        margin: 0 auto;
+    }
+
+    &-main__input-group {
+        width: 270px;
+    }
+
+    &-main__input {
+        font-family: 'Roboto Regular', sans-serif;
+        font-weight: 400;
+        width: 100%;
+        height: 60px;
+        border: none;
+        border: 1px solid #828282;
+        border-radius: 15px;
+        background-color: transparent;
+        padding: 0 20px;
+        font-size: 18px;
+        line-height: 21px;
+        color: #828282;
+
+        &::placeholder {
+            color: #828282;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &-main__button {
+        width: 270px;
+        height: 60px;
+    }
+
+}

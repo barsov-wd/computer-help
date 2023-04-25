@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Uni Neue';
+    src: local('Uni Neue Regular'), local('Uni-Neue-Regular'),
+        url('../fonts/UniNeueRegular.woff2') format('woff2'),
+        url('../fonts/UniNeueRegular.woff') format('woff'),
+        url('../fonts/UniNeueRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Neue';
+    src: local('Uni Neue Bold'), local('Uni-Neue-Bold'),
+        url('../fonts/UniNeueBold.woff2') format('woff2'),
+        url('../fonts/UniNeueBold.woff') format('woff'),
+        url('../fonts/UniNeueBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Neue';
+    src: local('Uni Neue Heavy'), local('Uni-Neue-Heavy'),
+        url('../fonts/UniNeueHeavy.woff2') format('woff2'),
+        url('../fonts/UniNeueHeavy.woff') format('woff'),
+        url('../fonts/UniNeueHeavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

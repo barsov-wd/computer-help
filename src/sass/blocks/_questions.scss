@@ -1,0 +1,66 @@
+.questions {
+    &__container {
+        position: relative;
+        padding-top: 124px;
+        padding-bottom: 99px;
+    }
+    &__image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &__form {
+        width: 850px;
+        text-align: center;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 100%;
+        color: #1B1B1B;
+        margin-bottom: 25px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 120%;
+        color: #1B1B1B;
+        margin-bottom: 60px;
+    }
+    &__form-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__input-group {
+        width: 270px;
+    }
+
+    &__input {
+        font-family: 'Roboto Regular', sans-serif;
+        font-weight: 400;
+        width: 100%;
+        height: 60px;
+        border: none;
+        border: 1px solid #828282;
+        border-radius: 15px;
+        background-color: transparent;
+        padding: 0 20px;
+        font-size: 18px;
+        line-height: 21px;
+        color: #828282;
+
+        &::placeholder {
+            color: #828282;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__button {
+        width: 270px;
+        height: 60px;
+    }
+}

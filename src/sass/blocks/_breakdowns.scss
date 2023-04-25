@@ -1,0 +1,91 @@
+.breakdowns {
+    padding: 90px 0;
+    &__title {
+        margin-bottom: 90px;
+    }
+    &__content {
+        position: relative;
+    }
+    &__image-notebook {
+        position: absolute;
+        left: 0;
+        top: -33px;
+    }
+    &__image-keyboard {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &__content-inner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 853px;
+        margin: 0 auto 75px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 578px;
+            background: url('../img/breakdowns/breakdowns-dashed-line.png') center no-repeat;
+        }
+    }
+    &__content-left {
+        text-align: right;
+    }
+    &__content-right {
+        margin-top: 84px;
+    }
+    &__content-item {
+        margin-bottom: 115px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__content-title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 120%;
+        color: #E91E1D;
+        margin-bottom: 5px;
+    }
+    &__content-descr {
+        position: relative;
+        width: 343px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        color: #1B1B1B;
+        &--left {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                right: -70px;
+                width: 50px;
+                height: 2px;
+                background: url('../img/breakdowns/line.png') center no-repeat;
+            }
+        }
+        &--right {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 15px;
+                left: -75px;
+                width: 50px;
+                height: 2px;
+                background: url('../img/breakdowns/line.png') center no-repeat;
+            }
+        }
+    }
+    &__button {
+        display: block;
+        width: 520px;
+        height: 60px;
+        margin: 0 auto;
+    }
+}

@@ -16,6 +16,11 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
+                <div class="header__burger">
+                    <div class="header__burger__line"></div>
+                    <div class="header__burger__line"></div>
+                    <div class="header__burger__line"></div>
+                </div>
                 <div class="header__texts">
                     <div class="header__text header__text--worktime">Без выходных и праздников</div>
                     <div class="header__text header__text--visit">Выезд в любую точку города</div>
@@ -32,6 +37,10 @@
                     </li>
                 </ul>
                 <button data-modal class="button header__button button--effect">Вызвать мастера</button>
+            </div>
+            <div class="header__texts-mobile">
+                <div class="header__text-mobile header__text-mobile--worktime">Выезд в любую точку города</div>
+                <div class="header__text-mobile header__text-mobile--visit">Без выходных и праздников</div>
             </div>
         </div>
     </header>
@@ -60,6 +69,8 @@
                         </div>
                         <button class="button promo__button">Получить скидку</button>
                     </form>
+                    <img class="promo__image-mobile promo__image-mobile--help" src="./img/promo/image-mobile-help.png"
+                        alt="image-mobile-help">
                 </div>
             </div>
         </section>
@@ -69,7 +80,7 @@
             <div class="container">
                 <div class="features__inner">
                     <div class="features__item">
-                        <img class="features__item-image" src="./img/features/image-1.png" alt="image-1">
+                        <img class="features__item-image features__item-image--one" src="./img/features/image-1.png" alt="image-1">
                         <div class="features__item-text">
                             <div class="features__item-title">Быстро</div>
                             <p class="features__item-descr features__item-descr--one">
@@ -78,7 +89,7 @@
                         </div>
                     </div>
                     <div class="features__item">
-                        <img class="features__item-image" src="./img/features/image-2.png"" alt=" image-2">
+                        <img class="features__item-image features__item-image--two" src="./img/features/image-2.png"" alt=" image-2">
                         <div class="features__item-text">
                             <div class="features__item-title">Доступные цены</div>
                             <p class="features__item-descr features__item-descr--two">
@@ -87,7 +98,7 @@
                         </div>
                     </div>
                     <div class="features__item">
-                        <img class="features__item-image" src="./img/features/image-3.png"" alt=" image-3">
+                        <img class="features__item-image features__item-image--three" src="./img/features/image-3.png"" alt=" image-3">
                         <div class="features__item-text">
                             <div class="features__item-title">Выезд мастера 0 руб.</div>
                             <p class="features__item-descr features__item-descr--three">
@@ -96,7 +107,7 @@
                         </div>
                     </div>
                     <div class="features__item">
-                        <img class="features__item-image" src="./img/features/image-4.png"" alt=" image-4">
+                        <img class="features__item-image features__item-image--four" src="./img/features/image-4.png"" alt=" image-4">
                         <div class="features__item-text">
                             <div class="features__item-title">Бесплатная диагностика</div>
                             <p class="features__item-descr features__item-descr--four">
@@ -134,13 +145,14 @@
                         <li class="problems__list-item">
                             Установим Windows
                         </li>
-                        <li class="problems__list-item">
+                        <li class="problems__list-item problems__list-item--last">
                             Почистим от вирусов
                         </li>
                     </ul>
                 </div>
+                <img class="problems__image-mobile-three" src="./img/problems/image-mobile-3.png" alt="image-mobile-3">
             </div>
-        </section>
+        </section> 
         <!-- ./problems -->
 
         <section class="info">
@@ -155,6 +167,7 @@
                     <p class="info__content-descr">
                         В таких случаях лучше обратиться к нашим профессионалам, которые окажут качественную и быструю помощь.
                     </p>
+                    <img class="info__image-mobile-three" src="./img/info/image-mobile-3.png" alt="image-mobile-3">
                     <div class="info__content-wrapper">
                         <div class="info__content-price">
                             от <span class="info__content-price info__content-price--color">250</span> руб.
@@ -168,7 +181,7 @@
         </section>
         <!-- ./info -->
 
-        <section class="cost">
+        <!-- <section class="cost">
             <div class="container">
                 <h2 class="title cost__title">
                     Стоимость услуг
@@ -271,10 +284,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- ./cost -->
 
-        <section class="breakdowns">
+        <!-- <section class="breakdowns">
             <h2 class="title breakdowns__title">Типовые поломки</h2>
             <div class="breakdowns__content">
                 <img class="breakdowns__image-notebook" src="./img/breakdowns/notebook-image.png" alt="notebook-image">
@@ -325,7 +338,7 @@
                     <button data-modal class="button breakdowns__button">Оставить заявку</button>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- ./breakdowns -->
 
         <section class="services">
@@ -383,6 +396,7 @@
                     <p class="questions__text">
                         Оставьте заявку, мастер перезвонит вам в течение 10 минут
                     </p>
+                    <img class="questions__image-mobile" src="./img/questions/questions-image-mobile.png" alt="image-mobile">
                     <div class="questions__form-inner">
                         <div class="questions__input-group">
                             <input type="text" class="questions__input" placeholder="Ваше имя">
@@ -419,7 +433,7 @@
                 <button data-modal class="button footer__button button--effect">Вызвать мастера</button>
             </div>
         </div>
-    </footer>
+    </footer> 
     <!-- ./footer -->
 
     <div class="modal modal-main">

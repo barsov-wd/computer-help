@@ -43,6 +43,7 @@
         }
         &--color-last {
             width: 582px;
+            height: 90px;
         }
     }
     &__text {
@@ -87,5 +88,8 @@
     &__button {
         width: 270px;
         height: 60px;
+    }
+    &__image-mobile {
+        display: none;
     }
 }

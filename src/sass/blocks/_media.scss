@@ -1452,6 +1452,117 @@
             right: 30px;
         }
     }
+    .cost {
+        .container {
+            max-width: 100%;
+        }
+        &__subtitle {
+            margin-bottom: 45px;
+        }
+        &__block-container {
+            display: block;
+            overflow: auto;
+            margin-bottom: 60px;
+        }
+        &__block {
+            width: 1310px;
+            padding: 50px 5px 50px 5px;
+            margin-bottom: 0;
+        }
+        &__block-inner {
+            &::before {
+                width: 95%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &__block-item {
+            width: 180px;
+            min-height: 110px;
+        }
+        &__block-title {
+            width: 162px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__block-text {
+            width: 140px;
+        }
+        &__items {
+            max-width: 750px;
+        }
+        &__item-image {
+            margin-bottom: 10px;
+            &::before {
+                width: 65px;
+                background-size: contain;
+                right: -52px;
+            }
+        }
+        &__item-descr {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
+    .breakdowns {
+        &__title {
+            margin-bottom: 45px;
+        }
+        &__content-inner {
+            flex-direction: column;
+            width: 306px;
+            margin-bottom: 15px;
+            &::before {
+                display: none;
+            }
+        }
+        &__content-left {
+            text-align: left;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: -89px;
+                top: -10px;
+                width: 2px;
+                height: 699px;
+                background: url('../img/breakdowns/breakdowns-mobile.png') no-repeat;
+            }
+        }
+        &__content-descr {
+            &::before {
+                display: none;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 12px;
+                left: -79px;
+                width: 50px;
+                height: 1px;
+                background: url('../img/breakdowns/line-mobile.png') no-repeat;
+            }
+        }
+        &__image-notebook,
+        &__image-keyboard {
+            display: none;
+        }
+        &__button {
+            width: 345px;
+        }
+        &__image-mobile {
+            display: block;
+            margin: 0 auto 20px;
+        }
+        &__content-item {
+            margin-bottom: 42px;
+        }
+    }
+    .menu {
+        &__link {
+            font-size: 16px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -1579,6 +1690,9 @@
         }
         &__item-descr {
             width: 100%;
+        }
+        &__item-image {
+            margin-bottom: 5px;
         }
     }
     .problems {
@@ -1751,6 +1865,68 @@
             right: 44%;
         }
     }
+    .cost {
+        &__items {
+            max-width: 540px;
+            flex-direction: column;
+        }
+        &__item {
+            position: relative;
+            margin-bottom: 85px;
+            &:last-child {
+                margin-bottom: 0;
+                &::after {
+                    display: none;
+                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -65px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 52px;
+                width: 12px;
+                background: url('../img/cost/cost-arrow-mobile.png') no-repeat;
+            }
+        }
+        &__item-image {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .menu {
+        &__dialog {
+            padding-top: 123px;
+            padding-bottom: 107px;
+            justify-content: center;
+        }
+        &__close {
+            position: absolute;
+            top: 18px;
+            left: 20px;
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+        &__nav {
+            margin-left: 0;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        &__link {
+            margin-left: 0;
+            font-size: 20px;
+            line-height: 21px;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -1795,12 +1971,8 @@
             }
         }
         &__image-mobile {
-            left: 20%;
-            &--notebook,
-            &--help {
-                left: 50%;
-                transform: translateX(-50%);
-            }
+            left: 50%;
+            transform: translateX(-50%);
         }
         &__text {
             width: 346px;
@@ -1902,6 +2074,44 @@
         }
         &__text {
             width: 275px;
+        }
+    }
+    .cost {
+        .container {
+            padding: 0;
+        }
+        &__subtitle {
+            width: 345px;
+            margin-bottom: 35px;
+        }
+        &__block-item {
+            width: 185px;
+        }
+    }
+    .breakdowns {
+        padding-top: 60px;
+        padding-bottom: 38px;
+        &__content-descr {
+            width: 241px;
+            font-size: 16px;
+            line-height: 17px;
+        }
+        &__content-left,
+        &__content-right {
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 447px) {
+    .promo {
+        &__image-mobile {
+            left: 53%;
+            &--notebook,
+            &--help {
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
 }
